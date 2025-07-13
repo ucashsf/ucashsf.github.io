@@ -1,91 +1,135 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UCash Soluções Financeiras</title>
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
+      margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fafafa; color: #333;
+      line-height: 1.6;
     }
     header {
       background-color: #fff;
-      padding: 20px;
-      border-bottom: 2px solid #ffd700;
+      border-bottom: 3px solid #ffd700;
+      padding: 20px 0;
       text-align: center;
     }
     header img {
-      max-height: 60px;
+      max-height: 70px;
+      width: auto;
     }
     main {
-      padding: 40px 20px;
       max-width: 900px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 40px;
+      margin: 30px auto 50px auto;
+      padding: 0 20px;
     }
     h1, h2 {
       color: #222;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
     }
     .btn-whatsapp {
       display: inline-block;
       background-color: #ffd700;
       color: #000;
-      padding: 12px 24px;
+      font-weight: bold;
+      padding: 14px 28px;
       border-radius: 6px;
       text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
     }
     .btn-whatsapp:hover {
       background-color: #e6c200;
     }
+    section {
+      margin-bottom: 50px;
+    }
+    .images-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    .images-row img {
+      width: 260px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+      transition: transform 0.3s ease;
+    }
+    .images-row img:hover {
+      transform: scale(1.05);
+    }
     footer {
       background-color: #fff;
       border-top: 1px solid #ddd;
-      text-align: center;
       padding: 20px;
+      text-align: center;
       font-size: 14px;
       color: #666;
+    }
+    @media (max-width: 600px) {
+      .images-row img {
+        width: 100%;
+        height: auto;
+      }
+      .images-row {
+        gap: 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="UCash Soluções Financeiras" />
-  </header>
 
-  <main>
-    <section>
-      <h1>Bem-vindo à UCash</h1>
-      <p>Atendemos servidores públicos, aposentados e pensionistas com soluções financeiras seguras, rápidas e sem burocracia.</p>
-      <a href="https://wa.me/551151994349" class="btn-whatsapp">Fale conosco pelo WhatsApp</a>
-    </section>
+<header>
+  <img src="logo.png" alt="UCash Soluções Financeiras" />
+</header>
 
-    <section>
-      <h2>Por que escolher a UCash?</h2>
-      <ul>
-        <li>Atendimento humanizado e especializado</li>
-        <li>Transparência e compromisso com você</li>
-        <li>Sem ofertas invasivas ou enganosas</li>
-        <li>Liberação de crédito com segurança</li>
-      </ul>
-    </section>
+<main>
+  <section>
+    <h1>Bem-vindo à UCash Soluções Financeiras</h1>
+    <p>Atendemos servidores públicos, aposentados e pensionistas com soluções financeiras seguras, rápidas e transparentes. Nosso compromisso é ajudar você a conquistar seus objetivos com empréstimos que fazem sentido para sua vida.</p>
+    <a href="https://wa.me/551151994349" class="btn-whatsapp">Fale conosco pelo WhatsApp</a>
+  </section>
 
-    <section>
-      <h2>Entre em contato</h2>
-      <p>Estamos prontos para atender você com rapidez e respeito. Clique no botão abaixo e fale agora pelo WhatsApp.</p>
-      <a href="https://wa.me/551151994349" class="btn-whatsapp">(11) 5199-4349</a>
-    </section>
-  </main>
+  <section>
+    <h2>Pessoas que confiam na UCash</h2>
+    <div class="images-row">
+      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Idoso feliz com dinheiro" />
+      <img src="https://images.unsplash.com/photo-1533691142732-82d17354a502?auto=format&fit=crop&w=400&q=80" alt="Policial militar sorridente" />
+      <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=400&q=80" alt="Professor feliz em sala de aula" />
+    </div>
+  </section>
 
-  <footer>
-    &copy; 2025 UCash Soluções Financeiras. Todos os direitos reservados.
-  </footer>
+  <section>
+    <h2>Atenção: aumento da taxa Selic impacta empréstimos</h2>
+    <p>Com o recente aumento da taxa Selic, as condições para contratação de empréstimos ficam mais restritas e as taxas tendem a subir. Para servidores públicos, aposentados e pensionistas, essa é a hora de garantir crédito nas melhores condições possíveis.</p>
+    <p>Na UCash, orientamos você a antecipar sua contratação de empréstimo para aproveitar taxas atuais antes que fiquem mais altas. Conte com nosso atendimento especializado para encontrar a melhor solução para seu perfil.</p>
+    <a href="https://wa.me/551151994349" class="btn-whatsapp">Fale agora e saiba mais</a>
+  </section>
+
+  <section>
+    <h2>Por que escolher a UCash?</h2>
+    <ul>
+      <li>Atendimento humanizado e transparente</li>
+      <li>Especialistas que entendem sua realidade</li>
+      <li>Sem burocracia e com agilidade na liberação</li>
+      <li>Segurança e privacidade garantidas</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 UCash Soluções Financeiras. Todos os direitos reservados.
+</footer>
+
 </body>
 </html>
